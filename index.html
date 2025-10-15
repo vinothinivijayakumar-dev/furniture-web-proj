@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Responsive Modern Furniture Website (HTML/CSS/JS)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./furniture.png" type="image/x-icon">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+    <header>
+        <div class="nav container">
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#popular" class="nav-link">Popular</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+
+            <a href="#" class="logo">
+                <h3>Furn.</h3>
+            </a>
+            
+            <div class="nav-icons">
+                <a href="#" class="cart-icon" id="cart-icon">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="cart-value">0</span>
+                </a>
+
+                <a href="#" class="user-icon" id="user-icon">
+                    <i class='bx bx-user'></i>
+                </a>
+            </div>
+
+            <section>
+                <div id="cart-page" class="cart-tab">
+                    <h2>Your Cart</h2>
+                    <div class="cart-list">
+
+                    </div>
+
+                    <div class="total-container">
+                        <h4>Total:</h4>
+                        <h4 class="cart-total">$0.00</h4>
+                    </div>
+
+                    <div class="btn-container flex gap-2">
+                        <a href="#" id="closeCart" class="btn close-btn">Close</a>
+                        <a href="#" class="btn">Check Out</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="login-form">
+                <form action="">
+                    <h2>Login To Continue</h2>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email..." required>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <a href="#">Forget Password?</a>
+                    <input type="submit" value="Login" class="btn">
+                    <a href="#">Create Account</a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1><span>Modern Furniture</span> <br>For Your House</h1>
+            <p>We understand your need for home decor <br> with unique decorative accessories.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="./Sofa.png" alt="">
+        </div>
+    </section>
+    <section class="popular container" id="popular">
+        <div class="heading">
+            <h2>Popular</h2>
+        </div>
+        <div class="popular-content">
+            <div class="box">
+                <img src="./popular1.png" alt="">
+                <h3>Soft Furniture</h3>
+            </div>
+            <div class="box">
+                <img src="./popular2.png" alt="">
+                <h3>Soft Furniture</h3>
+            </div>
+            <div class="box">
+                <img src="./popular3.png" alt="">
+                <h3>Soft Furniture</h3>
+            </div>
+            <div class="box">
+                <img src="./popular4.png" alt="">
+                <h3>Soft Furniture</h3>
+            </div>
+        </div>
+    </section>
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="./about.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>To discover new furniture design ideas was never so handy, browse over 500 products from our top
+                categories for an ultimate online furniture shopping experience. To choose furniture for a living space
+                is as tricky as doing the interiors. Either you're redoing or changing the place, all you need to know
+                is cheap online furniture shops from where you can buy quality products.</p>
+            <div class="features">
+                <i class='bx bxs-checkbox-checked'><span>Free Home Delivery</span></i>
+                <i class='bx bxs-checkbox-checked'><span>Easy Returns</span></i>
+                <i class='bx bxs-checkbox-checked'><span>Quality Assurance</span></i>
+            </div>
+    </section>
+
+    <section class="products container" id="products">
+        <div class="heading">
+            <h2>Product Shop</h2>
+        </div>
+
+        <div class="products-content">
+
+            <div class="box">
+                <img src="./products1.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products2.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products3.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products4.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products5.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products6.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products7.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./products8.png" alt="">
+                <div class="box-text">
+                    <div class="title-price">
+                        <h3>Soft Furniture</h3>
+                        <span>$150</span>
+                    </div>
+                    <a href="#"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newletter">
+        <div class="newsletter-content container">
+            <div class="newsletter-text">
+                <h2>SIGN UP AND WIN!</h2>
+                <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+            </div>
+            <form action="">
+                <input type="email" name="" id="" placeholder="Enter Your Email..." required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+    </section>
+    <section class="footer container">
+        <div class="footer-box">
+            <h3>The Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-box">
+            <h3>Popular Categories</h3>
+            <a href="#">Bedroom</a>
+            <a href="#">Living Rooms</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Kitchen</a>
+        </div>
+        <div class="footer-box">
+            <h3>More Information</h3>
+            <a href="#">Shipping</a>
+            <a href="#">Delivery & Returns</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sitemap</a>
+        </div>
+        <div class="footer-box">
+            <h3>Social</h3>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+    </section>
+    <div class="copyright">
+        <p>&copy;2025 FurniEra. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

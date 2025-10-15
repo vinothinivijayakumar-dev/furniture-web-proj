@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "popular1.png"
+    },
+    {
+        "id": 2,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "popular2.png"
+    },
+    {
+        "id": 3,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "popular3.png"
+    },
+    {
+        "id": 4,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "popular4.png"
+    },
+    {
+        "id": 5,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products1.png"
+    },
+    {
+        "id": 6,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products2.png"
+    },
+    {
+        "id": 7,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products3.png"
+    },
+    {
+        "id": 8,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products4.png"
+    },
+    {
+        "id": 9,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products5.png"
+    },
+    {
+        "id": 10,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products6.png"
+    },
+    {
+        "id": 11,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products7.png"
+    },
+    {
+        "id": 12,
+        "name": "Soft Furniture",
+        "price": "$150",
+        "image": "products8.png"
+    }
+]
