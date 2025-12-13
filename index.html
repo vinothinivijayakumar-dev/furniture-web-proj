@@ -7,8 +7,8 @@
     <title>A Responsive Modern Furniture Website (HTML/CSS/JS)</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="./furniture.png" type="image/x-icon">
-    <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -17,10 +17,11 @@
         <div class="nav container">
 
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                 <li class="nav-item"><a href="#popular" class="nav-link">Popular</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="menu-icon">
@@ -34,12 +35,13 @@
                 <li><a href="#popular">Popular</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <a href="#" class="logo">
                 <h3>Furn.</h3>
             </a>
-            
+
             <div class="nav-icons">
                 <a href="#" class="cart-icon" id="cart-icon">
                     <i class='bx bx-cart-alt'></i>
@@ -51,6 +53,7 @@
                 </a>
             </div>
 
+            <!-- CART PAGE -->
             <section>
                 <div id="cart-page" class="cart-tab">
                     <h2>Your Cart</h2>
@@ -70,6 +73,7 @@
                 </div>
             </section>
 
+            <!-- LOGIN FORM -->
             <div class="login-form">
                 <form action="">
                     <h2>Login To Continue</h2>
@@ -82,6 +86,8 @@
             </div>
         </div>
     </header>
+
+    <!-- HOME SECTION -->
     <section class="home container" id="home">
         <div class="home-text">
             <h1><span>Modern Furniture</span> <br>For Your House</h1>
@@ -89,32 +95,52 @@
             <a href="#" class="btn">Shop Now</a>
         </div>
         <div class="home-img">
-            <img src="./Sofa.png" alt="">
+            <img src="./home.jpg" alt="">
         </div>
     </section>
+
+    <!-- POPULAR SECTION -->
     <section class="popular container" id="popular">
         <div class="heading">
             <h2>Popular</h2>
+            <p class="popular-subtitle">A curated selection of our best-selling furniture crafted for modern living
+                spaces.</p>
         </div>
+
         <div class="popular-content">
+
             <div class="box">
-                <img src="./popular1.png" alt="">
-                <h3>Soft Furniture</h3>
+                <div class="img-wrapper">
+                    <img src="./popular1.png" alt="">
+                </div>
+                <h3>Modern Lamp</h3>
             </div>
+
             <div class="box">
-                <img src="./popular2.png" alt="">
-                <h3>Soft Furniture</h3>
+                <div class="img-wrapper">
+                    <img src="./popular2.png" alt="">
+                </div>
+                <h3>Wooden Chair</h3>
             </div>
+
             <div class="box">
-                <img src="./popular3.png" alt="">
-                <h3>Soft Furniture</h3>
+                <div class="img-wrapper">
+                    <img src="./popular3.png" alt="">
+                </div>
+                <h3>Luxury Sofa</h3>
             </div>
+
             <div class="box">
-                <img src="./popular4.png" alt="">
-                <h3>Soft Furniture</h3>
+                <div class="img-wrapper">
+                    <img src="./popular4.png" alt="">
+                </div>
+                <h3>Classic Table</h3>
             </div>
+
         </div>
     </section>
+
+    <!-- ABOUT SECTION -->
     <section class="about container" id="about">
         <div class="about-img">
             <img src="./about.png" alt="">
@@ -125,6 +151,7 @@
                 categories for an ultimate online furniture shopping experience. To choose furniture for a living space
                 is as tricky as doing the interiors. Either you're redoing or changing the place, all you need to know
                 is cheap online furniture shops from where you can buy quality products.</p>
+
             <div class="features">
                 <i class='bx bxs-checkbox-checked'><span>Free Home Delivery</span></i>
                 <i class='bx bxs-checkbox-checked'><span>Easy Returns</span></i>
@@ -132,9 +159,12 @@
             </div>
     </section>
 
+    <!-- PRODUCTS SECTION -->
     <section class="products container" id="products">
         <div class="heading">
             <h2>Product Shop</h2>
+            <p class="products-subtitle">Browse our elegant, durable furniture crafted for style, comfort, and
+                modern living.</p>
         </div>
 
         <div class="products-content">
@@ -221,6 +251,67 @@
             </div>
         </div>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="contact-heading-box">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out for collaborations, projects, or general inquiries.</p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="info-box">
+                    <div class="icon-circle">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Chennai, Tamil Nadu</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon-circle">
+                        <i class='bx bx-phone'></i>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="icon-circle">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>furniera@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form-box">
+
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <textarea id="message" placeholder="Write message here..." required></textarea>
+
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
     <section class="newletter">
         <div class="newsletter-content container">
             <div class="newsletter-text">
@@ -233,6 +324,8 @@
             </form>
         </div>
     </section>
+
+    <!-- FOOTER SECTION -->
     <section class="footer container">
         <div class="footer-box">
             <h3>The Company</h3>
@@ -241,6 +334,7 @@
             <a href="#">Blog</a>
             <a href="#">Privacy Policy</a>
         </div>
+
         <div class="footer-box">
             <h3>Popular Categories</h3>
             <a href="#">Bedroom</a>
@@ -248,6 +342,7 @@
             <a href="#">Outdoor</a>
             <a href="#">Kitchen</a>
         </div>
+
         <div class="footer-box">
             <h3>More Information</h3>
             <a href="#">Shipping</a>
@@ -255,18 +350,23 @@
             <a href="#">Contact Us</a>
             <a href="#">Sitemap</a>
         </div>
+
         <div class="footer-box">
             <h3>Social</h3>
             <div class="social">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-youtube'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
+                <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
             </div>
+
     </section>
+
     <div class="copyright">
         <p>&copy;2025 FurniEra. All rights reserved.</p>
     </div>
 
+    <script src="main.js"></script>
+    
 </body>
 
 </html>

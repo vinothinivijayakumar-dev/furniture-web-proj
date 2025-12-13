@@ -1,3 +1,11 @@
+//HOME IMAGE ANIMATION
+window.addEventListener("load", () => {
+    const homeImg = document.querySelector(".home-img");
+    if (homeImg) {
+        homeImg.classList.add("show");
+    }
+});
+
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
@@ -182,3 +190,33 @@ const initApp = () => {
 };
 
 initApp();
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Your message has been sent!");
+  this.reset();
+});
+
+// ABOUT SCROLL ANIMATION
+const aboutSection = document.querySelector('.about');
+const aboutImage = document.querySelector('.about-img');
+
+const observerAbout = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            aboutSection.classList.add('show');
+            aboutImage.classList.add('show'); 
+        }
+    });
+}, { threshold: 0.3 });
+
+observerAbout.observe(aboutSection);
+
+
+
+
+
+
+
+
+
