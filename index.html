@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./furniture.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/furniture.png" type="image/x-icon">
 </head>
 
 <body>
     <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+
     <header>
         <div class="nav container">
-
+            <a href="#" class="logo">
+                <img src="./images/furniture.png" alt="logo">
+                FurniEra
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                 <li class="nav-item"><a href="#popular" class="nav-link">Popular</a></li>
@@ -23,350 +27,613 @@
                 <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-
+            <div class="nav-icons">
+                <a href="#" class="wishlist-icon" id="wishlist-icon">
+                    <i class='bx bx-heart'></i>
+                    <span class="wishlist-value">0</span>
+                </a>
+                <a href="#" class="cart-icon" id="cart-icon">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" class="user-icon" id="user-icon">
+                    <i class='bx bx-user'></i>
+                </a>
+            </div>
             <div class="menu-icon">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#popular">Popular</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <a href="#" class="logo">
-                <h3>Furn.</h3>
-            </a>
-
-            <div class="nav-icons">
-                <a href="#" class="cart-icon" id="cart-icon">
-                    <i class='bx bx-cart-alt'></i>
-                    <span class="cart-value">0</span>
-                </a>
-
-                <a href="#" class="user-icon" id="user-icon">
-                    <i class='bx bx-user'></i>
-                </a>
-            </div>
-
-            <!-- CART PAGE -->
-            <section>
-                <div id="cart-page" class="cart-tab">
-                    <h2>Your Cart</h2>
-                    <div class="cart-list">
-
-                    </div>
-
-                    <div class="total-container">
-                        <h4>Total:</h4>
-                        <h4 class="cart-total">$0.00</h4>
-                    </div>
-
-                    <div class="btn-container flex gap-2">
-                        <a href="#" id="closeCart" class="btn close-btn">Close</a>
-                        <a href="#" class="btn">Check Out</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- LOGIN FORM -->
-            <div class="login-form">
-                <form action="">
-                    <h2>Login To Continue</h2>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email..." required>
-                    <input type="password" name="password" id="password" placeholder="password" required>
-                    <a href="#">Forget Password?</a>
-                    <input type="submit" value="Login" class="btn">
-                    <a href="#">Create Account</a>
-                </form>
-            </div>
         </div>
     </header>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#popular">Popular</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <!-- HOME SECTION -->
-    <section class="home container" id="home">
-        <div class="home-text">
-            <h1><span>Modern Furniture</span> <br>For Your House</h1>
-            <p>We understand your need for home decor <br> with unique decorative accessories.</p>
-            <a href="#" class="btn">Shop Now</a>
-        </div>
-        <div class="home-img">
-            <img src="./home.jpg" alt="">
-        </div>
-    </section>
+    <div id="main-content">
 
-    <!-- POPULAR SECTION -->
-    <section class="popular container" id="popular">
-        <div class="heading">
-            <h2>Popular</h2>
-            <p class="popular-subtitle">A curated selection of our best-selling furniture crafted for modern living
-                spaces.</p>
-        </div>
-
-        <div class="popular-content">
-
-            <div class="box">
-                <div class="img-wrapper">
-                    <img src="./popular1.png" alt="">
-                </div>
-                <h3>Modern Lamp</h3>
+        <!-- HOME PAGE -->
+        <section class="home container" id="home">
+            <div class="home-text">
+                <h1><span>Modern Furniture</span> <br>For Your House</h1>
+                <p>We understand your need for home decor <br> with unique decorative accessories.</p>
+                <a href="#products" class="btn shop-btn">Shop Now</a>
             </div>
-
-            <div class="box">
-                <div class="img-wrapper">
-                    <img src="./popular2.png" alt="">
-                </div>
-                <h3>Wooden Chair</h3>
+            <div class="home-img">
+                <img src="./images/home.jpg" alt="">
             </div>
+        </section>
 
-            <div class="box">
-                <div class="img-wrapper">
-                    <img src="./popular3.png" alt="">
-                </div>
-                <h3>Luxury Sofa</h3>
+        <!-- POPULAR PAGE -->
+        <section class="popular container" id="popular">
+            <div class="heading">
+                <h2>Popular</h2>
+                <p class="popular-subtitle">A curated selection of our best-selling furniture crafted for modern living
+                    spaces.</p>
             </div>
-
-            <div class="box">
-                <div class="img-wrapper">
-                    <img src="./popular4.png" alt="">
-                </div>
-                <h3>Classic Table</h3>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about container" id="about">
-        <div class="about-img">
-            <img src="./about.png" alt="">
-        </div>
-        <div class="about-text">
-            <h2>About Us</h2>
-            <p>To discover new furniture design ideas was never so handy, browse over 500 products from our top
-                categories for an ultimate online furniture shopping experience. To choose furniture for a living space
-                is as tricky as doing the interiors. Either you're redoing or changing the place, all you need to know
-                is cheap online furniture shops from where you can buy quality products.</p>
-
-            <div class="features">
-                <i class='bx bxs-checkbox-checked'><span>Free Home Delivery</span></i>
-                <i class='bx bxs-checkbox-checked'><span>Easy Returns</span></i>
-                <i class='bx bxs-checkbox-checked'><span>Quality Assurance</span></i>
-            </div>
-    </section>
-
-    <!-- PRODUCTS SECTION -->
-    <section class="products container" id="products">
-        <div class="heading">
-            <h2>Product Shop</h2>
-            <p class="products-subtitle">Browse our elegant, durable furniture crafted for style, comfort, and
-                modern living.</p>
-        </div>
-
-        <div class="products-content">
-
-            <div class="box">
-                <img src="./products1.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products2.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products3.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products4.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products5.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products6.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products7.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./products8.png" alt="">
-                <div class="box-text">
-                    <div class="title-price">
-                        <h3>Soft Furniture</h3>
-                        <span>$150</span>
-                    </div>
-                    <a href="#"><i class='bx bx-cart-alt'></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-        <div class="contact-heading-box">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out for collaborations, projects, or general inquiries.</p>
-        </div>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-
-                <div class="info-box">
-                    <div class="icon-circle">
-                        <i class='bx bx-map'></i>
-                    </div>
-                    <div>
-                        <h3>Address</h3>
-                        <p>Chennai, Tamil Nadu</p>
+            <div class="popular-content">
+                <div class="box">
+                    <div class="img-wrapper"><img src="./images/popular1.png" alt=""></div>
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Modern Lamp</h3>
+                            <span class="price">$110</span>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="popular-wishlist-btn" data-id="p1" data-name="Modern Lamp"
+                                data-price="$110" data-image="./popular1.png"><i class='bx bx-heart'></i>
+                            </a>
+                            <a href="#" class="popular-cart-btn" data-id="p1" data-name="Modern Lamp" data-price="$110"
+                                data-image="./popular1.png"><i class='bx bx-cart-alt'></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="info-box">
-                    <div class="icon-circle">
-                        <i class='bx bx-phone'></i>
-                    </div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+91 98765 43210</p>
-                    </div>
-                </div>
-
-                <div class="info-box">
-                    <div class="icon-circle">
-                        <i class='bx bx-envelope'></i>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>furniera@gmail.com</p>
+                <div class="box">
+                    <div class="img-wrapper"><img src="./images/popular2.png" alt=""></div>
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Wooden Chair</h3>
+                            <span class="price">$120</span>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="popular-wishlist-btn" data-id="p2" data-name="Wooden Chair"
+                                data-price="$120" data-image="./popular2.png"><i class='bx bx-heart'></i>
+                            </a>
+                            <a href="#" class="popular-cart-btn" data-id="p2" data-name="Wooden Chair" data-price="$120"
+                                data-image="./popular2.png"><i class='bx bx-cart-alt'></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
+                <div class="box">
+                    <div class="img-wrapper"><img src="./images/popular3.png" alt=""></div>
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Luxury Sofa</h3>
+                            <span class="price">$130</span>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="popular-wishlist-btn" data-id="p3" data-name="Luxury Sofa"
+                                data-price="$130" data-image="./popular3.png"><i class='bx bx-heart'></i>
+                            </a>
+                            <a href="#" class="popular-cart-btn" data-id="p3" data-name="Luxury Sofa" data-price="$130"
+                                data-image="./popular3.png"><i class='bx bx-cart-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-wrapper"><img src="./images/popular4.png" alt=""></div>
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Classic Table</h3>
+                            <span class="price">$140</span>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="popular-wishlist-btn" data-id="p4" data-name="Classic Table"
+                                data-price="$140" data-image="./popular4.png"><i class='bx bx-heart'></i>
+                            </a>
+                            <a href="#" class="popular-cart-btn" data-id="p4" data-name="Classic Table"
+                                data-price="$140" data-image="./popular4.png"><i class='bx bx-cart-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="contact-form-box">
+        <!-- ABOUT PAGE -->
+        <section class="about container" id="about">
+            <div class="about-img"><img src="./images/about.png" alt=""></div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>To discover new furniture design ideas was never so handy, browse over 500 products from our top
+                    categories for an ultimate online furniture shopping experience. To choose furniture for a living
+                    space is as tricky as doing the interiors. Either you're redoing or changing the place, all you need
+                    to know is cheap online furniture shops from where you can buy quality products.</p>
+                <div class="features">
+                    <i class='bx bxs-checkbox-checked'><span>Free Home Delivery</span></i>
+                    <i class='bx bxs-checkbox-checked'><span>Easy Returns</span></i>
+                    <i class='bx bxs-checkbox-checked'><span>Quality Assurance</span></i>
+                </div>
+            </div>
+        </section>
 
-                <form id="contactForm">
-                    <input type="text" id="name" placeholder="Enter your name" required>
+        <!-- PRODUCTS PAGE -->
+        <section class="products container" id="products">
+            <div class="heading">
+                <h2>Product Shop</h2>
+                <p class="products-subtitle">Browse our elegant, durable furniture crafted for style, comfort, and
+                    modern living.</p>
+            </div>
+            <div class="products-content">
+                <!-- Cards rendered by main.js from products.json -->
+            </div>
+        </section>
 
-                    <input type="email" id="email" placeholder="Enter your email" required>
+        <!-- CONTACT US PAGE -->
+        <section class="contact-section" id="contact">
+            <div class="contact-heading-box">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out for collaborations, projects, or general inquiries.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <div class="icon-circle"><i class='bx bx-map'></i></div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Chennai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-circle"><i class='bx bx-phone'></i></div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon-circle"><i class='bx bx-envelope'></i></div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>furniera@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <form id="contactForm">
+                        <input type="text" id="contact-name" placeholder="Enter your name" required>
+                        <input type="email" id="contact-email" placeholder="Enter your email" required>
+                        <textarea id="contact-message" placeholder="Write message here..." required></textarea>
+                        <button type="submit" class="send-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-                    <textarea id="message" placeholder="Write message here..." required></textarea>
-
-                    <button type="submit" class="send-btn">Send</button>
+        <!-- SHARED NEWSLETTER + FOOTER (main page) -->
+        <section class="newletter" id="newsletter-main">
+            <div class="newsletter-content container">
+                <div class="newsletter-text">
+                    <h2>SIGN UP AND WIN!</h2>
+                    <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter Your Email..." required>
+                    <input type="submit" value="Subscribe" class="btn">
+                    <span class="newsletter-msg"></span>
                 </form>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="footer container">
+            <div class="footer-box">
+                <h3>The Company</h3>
 
-    <!-- NEWSLETTER SECTION -->
-    <section class="newletter">
-        <div class="newsletter-content container">
-            <div class="newsletter-text">
-                <h2>SIGN UP AND WIN!</h2>
-                <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
             </div>
-            <form action="">
-                <input type="email" name="" id="" placeholder="Enter Your Email..." required>
-                <input type="submit" value="Subscribe" class="btn">
+            <div class="footer-box">
+                <h3>Popular Categories</h3>
+
+                <a href="#">Bedroom</a>
+                <a href="#">Living Rooms</a>
+                <a href="#">Outdoor</a>
+                <a href="#">Kitchen</a>
+            </div>
+            <div class="footer-box">
+                <h3>More Information</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Delivery & Returns</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-box">
+                <h3>Social</h3>
+                <div class="social">
+                    <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy;2025 FurniEra. All rights reserved.</p>
+        </div>
+
+    </div>
+
+    <!-- CART PAGE -->
+    <div id="cart-page" class="cart-tab page-overlay">
+        <div class="page-top-spacer"></div>
+        <div class="cart-header">
+            <a href="#" id="closeCart"><i class='bx bx-x'></i></a>
+        </div>
+        <div class="cart-title">
+            <h2><i class='bx bxs-cart-alt'></i> Your Cart</h2>
+            <p>Everything you picked is right here, just one step away from checkout.</p>
+        </div>
+        <div class="cart-list"></div>
+        <div class="cart-bottom">
+            <div class="cart-total-box">
+                <span>Total:</span>
+                <span class="cart-total">$0.00</span>
+            </div>
+            <a href="#" class="btn checkout-btn">Check Out</a>
+        </div>
+        <section class="newletter">
+            <div class="newsletter-content container">
+                <div class="newsletter-text">
+                    <h2>SIGN UP AND WIN!</h2>
+                    <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter Your Email..." required>
+                    <input type="submit" value="Subscribe" class="btn"><span class="newsletter-msg"></span>
+                </form>
+            </div>
+        </section>
+        <section class="footer container">
+            <div class="footer-box">
+                <h3>The Company</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Popular Categories</h3>
+
+                <a href="#">Bedroom</a>
+                <a href="#">Living Rooms</a>
+                <a href="#">Outdoor</a>
+                <a href="#">Kitchen</a>
+            </div>
+            <div class="footer-box">
+                <h3>More Information</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Delivery & Returns</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-box">
+                <h3>Social</h3>
+                <div class="social">
+                    <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy;2025 FurniEra. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- CHECKOUT PAGE -->
+    <div class="checkout-page page-overlay" id="checkout-page">
+        <div class="page-top-spacer"></div>
+        <div class="checkout-header">
+            <a href="#" id="closeCheckout"><i class='bx bx-x'></i></a>
+        </div>
+        <div class="checkout-title">
+            <h2><i class='bx bxs-credit-card'></i> Checkout</h2>
+            <p>Complete your order — fast, easy, and secure.</p>
+        </div>
+        <div class="checkout-container">
+            <div class="checkout-form-card">
+                <h3>Delivery Details</h3>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="co-name" placeholder="Enter your full name">
+                    <span class="field-error" id="err-name"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="co-email" placeholder="Enter your email">
+                    <span class="field-error" id="err-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="co-phone" placeholder="Enter your phone number">
+                    <span class="field-error" id="err-phone"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Delivery Address</label>
+                    <textarea id="co-address" placeholder="Enter your full address" rows="3"></textarea>
+                    <span class="field-error" id="err-address"></span>
+                </div>
+
+                <h3 style="margin-top: 1.5rem;">Payment Method</h3>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="cod" checked>
+                        <div class="payment-box"><i class='bx bx-money'></i><span>Cash on Delivery</span></div>
+                    </label>
+
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="upi">
+                        <div class="payment-box"><i class='bx bx-qr-scan'></i><span>UPI Payment</span></div>
+                    </label>
+                </div>
+                <div class="upi-input-box" id="upi-input-box" style="display:none;">
+                    <input type="text" id="co-upi" placeholder="Enter UPI ID (e.g. name@upi)">
+                    <span class="field-error" id="err-upi"></span>
+                </div>
+                <button class="place-order-btn" id="place-order-btn">
+                    <i class='bx bxs-check-circle'></i> Place Order
+                </button>
+            </div>
+            <div class="checkout-summary-card">
+                <h3>Order Summary</h3>
+                <div class="summary-items" id="summary-items"></div>
+                <div class="summary-total-box">
+                    <span>Total</span>
+                    <span class="summary-total" id="summary-total">$0.00</span>
+                </div>
+            </div>
+        </div>
+        <section class="newletter">
+            <div class="newsletter-content container">
+                <div class="newsletter-text">
+                    <h2>SIGN UP AND WIN!</h2>
+                    <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter Your Email..." required>
+                    <input type="submit" value="Subscribe" class="btn">
+                    <span class="newsletter-msg"></span>
+                </form>
+            </div>
+        </section>
+        <section class="footer container">
+            <div class="footer-box">
+                <h3>The Company</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Popular Categories</h3>
+
+                <a href="#">Bedroom</a>
+                <a href="#">Living Rooms</a>
+                <a href="#">Outdoor</a>
+                <a href="#">Kitchen</a>
+            </div>
+            <div class="footer-box">
+                <h3>More Information</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Delivery & Returns</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-box">
+                <h3>Social</h3>
+                <div class="social">
+                    <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy;2025 FurniEra. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- WISHLIST PAGE -->
+    <div class="wishlist-page page-overlay" id="wishlist-page">
+        <div class="page-top-spacer"></div>
+        <div class="wishlist-header">
+            <a href="#" id="closeWishlist"><i class='bx bx-x'></i></a>
+        </div>
+        <div class="wishlist-title">
+            <h2><i class='bx bxs-heart'></i> Your Wishlist</h2>
+            <p>Curated with love — everything you adore, waiting just for you.</p>
+        </div>
+        <div class="wishlist-list" id="wishlist-list"></div>
+        <div class="wishlist-total-box">
+            <span>Total:</span>
+            <span class="wishlist-total-amount">$0.00</span>
+        </div>
+
+        <section class="newletter">
+            <div class="newsletter-content container">
+                <div class="newsletter-text">
+                    <h2>SIGN UP AND WIN!</h2>
+                    <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter Your Email..." required>
+                    <input type="submit" value="Subscribe" class="btn"><span class="newsletter-msg"></span>
+                </form>
+            </div>
+        </section>
+        <section class="footer container">
+            <div class="footer-box">
+                <h3>The Company</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Popular Categories</h3>
+
+                <a href="#">Bedroom</a>
+                <a href="#">Living Rooms</a>
+                <a href="#">Outdoor</a>
+                <a href="#">Kitchen</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>More Information</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Delivery & Returns</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-box">
+                <h3>Social</h3>
+                <div class="social">
+                    <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy;2025 FurniEra. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- LOGIN PAGE -->
+    <div class="login-form page-overlay" id="login-page">
+        <div class="page-top-spacer"></div>
+        <div class="login-header">
+            <a href="#" id="closeLogin"><i class='bx bx-x'></i></a>
+        </div>
+        <div class="login-inner">
+            <form id="loginForm">
+                <h2>Login To Continue</h2>
+
+                <div class="login-field">
+                    <label>Email Address</label>
+                    <input type="email" id="login-email" placeholder="Enter your email">
+                    <span class="field-error" id="err-login-email"></span>
+                </div>
+
+                <div class="login-field">
+                    <label>Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password">
+                    <span class="field-error" id="err-login-password"></span>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <div class="login-divider">
+                    <span>OR</span>
+                </div>
+
+                <div class="social-login">
+                    <a href="#" class="social-login-btn google">
+                        <img src="./images/google-icon.png" alt="Google">
+                        <span>Continue with Google</span>
+                    </a>
+                    <a href="#" class="social-login-btn facebook">
+                        <i class='bx bxl-facebook'></i>
+                        <span>Continue with Facebook</span>
+                    </a>
+                </div>
             </form>
         </div>
-    </section>
+        <section class="newletter">
+            <div class="newsletter-content container">
+                <div class="newsletter-text">
+                    <h2>SIGN UP AND WIN!</h2>
+                    <p>Sign Up And Get A Chance To Win The Giveaway Of The Week.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter Your Email..." required>
+                    <input type="submit" value="Subscribe" class="btn"><span class="newsletter-msg"></span>
+                </form>
+            </div>
+        </section>
 
-    <!-- FOOTER SECTION -->
-    <section class="footer container">
-        <div class="footer-box">
-            <h3>The Company</h3>
-            <a href="#">About Us</a>
-            <a href="#">Help</a>
-            <a href="#">Blog</a>
-            <a href="#">Privacy Policy</a>
-        </div>
+        <section class="footer container">
+            <div class="footer-box">
+                <h3>The Company</h3>
 
-        <div class="footer-box">
-            <h3>Popular Categories</h3>
-            <a href="#">Bedroom</a>
-            <a href="#">Living Rooms</a>
-            <a href="#">Outdoor</a>
-            <a href="#">Kitchen</a>
-        </div>
-
-        <div class="footer-box">
-            <h3>More Information</h3>
-            <a href="#">Shipping</a>
-            <a href="#">Delivery & Returns</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Sitemap</a>
-        </div>
-
-        <div class="footer-box">
-            <h3>Social</h3>
-            <div class="social">
-                <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
-                <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
-                <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
             </div>
 
-    </section>
+            <div class="footer-box">
+                <h3>Popular Categories</h3>
 
-    <div class="copyright">
-        <p>&copy;2025 FurniEra. All rights reserved.</p>
+                <a href="#">Bedroom</a>
+                <a href="#">Living Rooms</a>
+                <a href="#">Outdoor</a>
+                <a href="#">Kitchen</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>More Information</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Delivery & Returns</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-box">
+                <h3>Social</h3>
+                <div class="social">
+                    <a href="#" class="tooltip" data-tooltip="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="tooltip" data-tooltip="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy;2025 FurniEra. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS POPUP -->
+    <div class="order-success-popup" id="order-success-popup">
+        <div class="success-box">
+            <i class='bx bxs-check-circle'></i>
+            <h3>Order Placed!</h3>
+            <p>Your order has been placed successfully. Thank you for shopping with FurniEra!</p>
+            <button class="success-close-btn" id="success-close-btn">Continue Shopping</button>
+        </div>
     </div>
 
     <script src="main.js"></script>
-    
 </body>
 
 </html>

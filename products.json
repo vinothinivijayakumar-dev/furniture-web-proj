@@ -1,74 +1,92 @@
 [
     {
         "id": 1,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "popular1.png"
+        "name": "Modern Lamp",
+        "price": "$110",
+        "image": "./images/popular1.png"
     },
     {
         "id": 2,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "popular2.png"
+        "name": "Wooden Chair",
+        "price": "$120",
+        "image": "./images/popular2.png"
     },
     {
         "id": 3,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "popular3.png"
+        "name": "Luxury Sofa",
+        "price": "$130",
+        "image": "./images/popular3.png"
     },
     {
         "id": 4,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "popular4.png"
+        "name": "Classic Table",
+        "price": "$140",
+        "image": "./images/popular4.png"
     },
     {
         "id": 5,
-        "name": "Soft Furniture",
+        "name": "Dark Dresser",
         "price": "$150",
-        "image": "products1.png"
+        "image": "./images/products1.png"
     },
     {
         "id": 6,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products2.png"
+        "name": "Urban Nest",
+        "price": "$159",
+        "image": "./images/products2.png"
     },
     {
         "id": 7,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products3.png"
+        "name": "Timber Edge",
+        "price": "$145",
+        "image": "./images/products3.png"
     },
     {
         "id": 8,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products4.png"
+        "name": "Side Cabinet",
+        "price": "$160",
+        "image": "./images/products4.png"
     },
     {
         "id": 9,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products5.png"
+        "name": "Dining Table",
+        "price": "$169",
+        "image": "./images/products5.png"
     },
     {
         "id": 10,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products6.png"
+        "name": "Teal Armchair",
+        "price": "$139",
+        "image": "./images/products6.png"
     },
     {
         "id": 11,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products7.png"
+        "name": "Comfort Bed",
+        "price": "$179",
+        "image": "./images/products7.png"
     },
     {
         "id": 12,
-        "name": "Soft Furniture",
-        "price": "$150",
-        "image": "products8.png"
+        "name": "Lounge Sofa",
+        "price": "$170",
+        "image": "./images/products8.png"
+    },
+    {
+        "id": 13,
+        "name": "Closet",
+        "price": "$180",
+        "image": "./images/products9.png"
+    },
+    {
+        "id": 14,
+        "name": "Office Chair",
+        "price": "$185",
+        "image": "./images/products10.png"
+    },
+    {
+        "id": 15,
+        "name": "Bookshelf",
+        "price": "$190",
+        "image": "./images/products11.png"
     }
 ]
